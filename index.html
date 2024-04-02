@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+
+<!--------------------------مكتبات خارجية--------------->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&amp;display=swap");
+
+    body{
+        background: rgb(3, 86, 134);
+        font-family: 'Aref Ruqaa',sans-serif;
+    }
+    .task-table{
+background-color:rgb(239,239,239) ;
+width: 58%;
+/* height: 500px; */
+margin-top: 130px;
+    }
+    button{
+        border: none;
+        font-size: 20px;
+        box-shadow: 0px 3px 5px rgba(168,168,168,0.38);
+    }
+    button.circler{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 0;
+    }
+    .task{
+        display: flex;
+        background: #fff;
+        padding: 4px;
+        border-bottom: solid teal 1px;
+        transition:box-shadow 0.2s , transform 1s;
+        margin-bottom: 10px;
+        box-shadow: 0px 3px 15px rgba(97,97,97,0.834);
+border-radius: 20px;
+        
+    }
+    .done{
+        background-color: rgb(158, 253, 158);
+    }
+ 
+    .task:hover{
+        box-shadow: 0px 3px 15px rgba(97,97,97,0.834);
+        transform: scale(1.13);
+    }
+</style>
+</head>
+<body>
+    <!----------------CENTER DIV------------>
+   <div style="direction: rtl;">
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <h1 style="margin-right: 0px; color: #fff;">أول خطوة دائما , هي التدوين ....</h1>
+
+        <!-------------------TASKS ----------------->
+       
+<div class="task-table" style="border-radius: 20px;
+ box-shadow: 0px 3px 15px rgba(97,97,97,0.834); ">
+
+<!-------------------HEADER--------------------->
+<div style="width: 94%;  text-align: center; background: rgb(0, 2, 128);color: #fff;padding: 8px 8px; border-radius: 20px;margin-top: 10px;margin-right: 10px;box-shadow: 0 10px 4px rgba(0,0,0,0.3);">
+    <h1 style="display: inline;">مهامي</h1>
+    <button id="add-btn" style="float: right; background: #fff;margin-right: 10px;" class="circler"><span class="material-symbols-outlined">
+        add
+        </span></button>
+</div>
+<!-------------------HEADER--------------------->
+
+<!---------------------TASKS -------------------------->
+<div id="tasks" style="padding: 30px; ">
+    <!-------------task------->
+    <div class="task" >
+
+<!--------------task info--------------->
+<div style="width: 70%;
+" >
+<h2>قراءة كتب</h2>
+<div>
+    <span>
+        <span class="material-symbols-outlined">
+            event_note
+            </span>20/10/2005
+    </span>
+</div>
+</div>
+<!--------------end task info--------------->
+
+<!--------------task actions--------------->
+<div style="display:flex;justify-content: space-between; align-items: center; width:25%;">
+    <button class="circler" style="background-color: rgb(114,0,0); color:#fff"><span class="material-symbols-outlined">
+        delete_forever
+        </span></button>
+    <button class="circler" style="background-color: rgb(0,150,30); color:#fff"><span class="material-symbols-outlined">
+        done
+        </span></button>
+    <button class="circler" style="background-color: rgb(0,16,197,0.692); color:#fff"><span class="material-symbols-outlined">
+        edit
+        </span></button>
+</div>
+<!--------------end task actions--------------->
+
+    </div>
+    <div class="task">
+
+        <!--------------task info--------------->
+        <div style="width: 70%;
+        " >
+        <h2>قراءة كتب</h2>
+        <div>
+            <span>
+                <span class="material-symbols-outlined">
+                    event_note
+                    </span>  20/10/2005
+            </span>
+        </div>
+        </div>
+        <!--------------end task info--------------->
+        
+        <!--------------task actions--------------->
+        <div style="display:flex;justify-content: space-between; align-items: center; width:25%;">
+            <button class="circler" style="background-color: rgb(114,0,0); color:#fff"><span class="material-symbols-outlined">
+                delete_forever
+                </span></button>
+            <button class="circler" style="background-color: rgb(0,150,30); color:#fff"><span class="material-symbols-outlined">
+                done
+                </span></button>
+            <button class="circler" style="background-color: rgb(0,16,197,0.692); color:#fff"><span class="material-symbols-outlined">
+                edit
+                </span></button>
+        </div>
+        <!--------------end task actions--------------->
+        
+            </div>
+            <div class="task">
+
+                <!--------------task info--------------->
+                <div style="width: 70%;
+                " >
+                <h2>قراءة كتب</h2>
+                <div>
+                    <span>
+                        <span class="material-symbols-outlined">
+                            event_note
+                            </span>  20/10/2005
+                    </span>
+                </div>
+                </div>
+                <!--------------end task info--------------->
+                
+                <!--------------task actions--------------->
+                <div style="display:flex;justify-content: space-between; align-items: center; width:25%;">
+                    <button class="circler" style="background-color: rgb(114,0,0); color:#fff"><span class="material-symbols-outlined">
+                        delete_forever
+                        </span></button>
+                    <button class="circler" style="background-color: rgb(0,150,30); color:#fff"><span class="material-symbols-outlined">
+                        done
+                        </span></button>
+                    <button class="circler" style="background-color: rgb(0,16,197,0.692); color:#fff"><span class="material-symbols-outlined">
+                        edit
+                        </span></button>
+                </div>
+                <!--------------end task actions--------------->
+                
+                    </div>
+                    <div class="task">
+
+                        <!--------------task info--------------->
+                        <div style="width: 70%;
+                        " >
+                        <h2>قراءة كتب</h2>
+                        <div>
+                            <span>
+                                <span class="material-symbols-outlined">
+                                    event_note
+                                    </span>   20/10/2005
+                            </span>
+                        </div>
+                        </div>
+                        <!--------------end task info--------------->
+                        
+                        <!--------------task actions--------------->
+                        <div style="display:flex;justify-content: space-between; align-items: center; width:25%;">
+                            <button class="circler" style="background-color: rgb(114,0,0); color:#fff"><span class="material-symbols-outlined">
+                                delete_forever
+                                </span></button>
+                            <button class="circler" style="background-color: rgb(0,150,30); color:#fff"><span class="material-symbols-outlined">
+                                done
+                                </span></button>
+                            <button class="circler" style="background-color: rgb(0,16,197,0.692); color:#fff"><span class="material-symbols-outlined">
+                                edit
+                                </span></button>
+                        </div>
+                        <!--------------end task actions--------------->
+                        
+                            </div>
+                            <div class="task">
+
+                                <!--------------task info--------------->
+                                <div style="width: 70%;
+                                " >
+                                <h2>قراءة كتب</h2>
+                                <div>
+                                    <span>
+                                        <span class="material-symbols-outlined">
+                                            event_note
+                                            </span>     20/10/2005
+                                    </span>
+                                </div>
+                                </div>
+                                <!--------------end task info--------------->
+                                
+                                <!--------------task actions--------------->
+                                <div style="display:flex;justify-content: space-between; align-items: center; width:25%;">
+                                    <button class="circler" style="background-color: rgb(114,0,0); color:#fff"><span class="material-symbols-outlined">
+                                        delete_forever
+                                        </span></button>
+                                    <button class="circler" style="background-color: rgb(0,150,30); color:#fff"><span class="material-symbols-outlined">
+                                        done
+                                        </span></button>
+                                    <button class="circler" style="background-color: rgb(0,16,197,0.692); color:#fff"><span class="material-symbols-outlined">
+                                        edit
+                                        </span></button>
+                                </div>
+                                <!--------------end task actions--------------->
+                                
+                                    </div>
+                                    <div class="task">
+
+                                        <!--------------task info--------------->
+                                        <div style="width: 70%;
+                                        " >
+                                        <h2>قراءة كتب</h2>
+                                        <div>
+                                            <span>
+                                                <span class="material-symbols-outlined">
+                                                    event_note
+                                                    </span> 20/10/2005
+                                            </span>
+                                        </div>
+                                        </div>
+                                        <!--------------end task info--------------->
+                                        
+                                        <!--------------task actions--------------->
+                                        <div style="display:flex;justify-content: space-between; align-items: center; width:25%;">
+                                            <button class="circler" style="background-color: rgb(114, 0, 0); color:#fff"><span class="material-symbols-outlined">
+                                                delete_forever
+                                                </span></button>
+                                            <button class="circler" style="background-color: rgb(0,150,30); color:#fff"><span class="material-symbols-outlined">
+                                                done
+                                                </span></button>
+                                            <button class="circler" style="background-color: rgb(0,16,197,0.692); color:#fff"><span class="material-symbols-outlined">
+                                                edit
+                                                </span></button>
+                                        </div>
+                                        <!--------------end task actions--------------->
+                                        
+                                            </div>
+   
+
+ 
+          
+
+        <!-------------------END TASKS ----------------->
+
+    </div>
+   </div> 
+    <!----------------END CENTER DIV------------>
+    <h3 style="color:#bbb">
+        By / Eng Waleed
+    </h3>
+</body>
+
+<script>
+  
+    let tasks =[
+        {
+            "title":"قراءة كتاب",
+            "date":"20/10/2005",
+            "isDone":false
+        },  {
+            "title":"انهاء المشروع",
+            "date":"20/10/2005",
+            "isDone":false
+        },  {
+            "title":"انهاء حياتك",
+            "date":"20/10/2005",
+            "isDone":false
+        },
+        {
+            "title":"كلما علم جهل",
+            "date":"1/9/2005",
+            "isDone":true
+        }
+    ]
+
+function getTasksFromStorage(){
+let rerievedTasks = JSON.parse(localStorage.getItem("tasks"))
+if(rerievedTasks == null){
+    tasks =[]
+}else{
+    tasks = rerievedTasks;
+}
+}
+getTasksFromStorage()
+
+    function fillTaskOnThePage(){
+
+    
+    document.getElementById("tasks").innerHTML =""
+    let index =0
+    for(task of tasks){
+    let content = 
+    `
+    <div class="task ${task.isDone ? 'done':''}">
+
+<!--------------task info--------------->
+<div style="width: 70%;
+" >
+<h2>${task.title}</h2>
+<div>
+    <span>
+        <span class="material-symbols-outlined">
+            event_note
+            </span>${task.date}
+    </span>
+</div>
+</div>
+<!--------------end task info--------------->
+
+<!--------------task actions--------------->
+<div style="display:flex;justify-content: space-between; align-items: center; width:25%;">
+    <button onclick="deleteTask(${index})" class="circler" style="background-color: rgb(114,0,0); color:#fff"><span class="material-symbols-outlined">
+        delete_forever
+        </span></button>
+        ${task.isDone ? `
+            <button onclick="toggleTaskComplete(${index})" class="circler" style="background-color: rgb(118,0,101); color:#fff"><span class="material-symbols-outlined">
+        cancel
+        </span></button>
+            `:`
+        <button onclick="toggleTaskComplete(${index})" class="circler" style="background-color: rgb(0,150,30); color:#fff"><span class="material-symbols-outlined">
+        done 
+        </span></button>
+        `}
+    
+        <button onclick="editTask(${index})" class="circler" style="background-color: rgb(0,16,197,0.692); color:#fff"><span class="material-symbols-outlined">
+                                                edit
+                                                </span></button>
+</div>
+<!--------------end task actions--------------->
+
+    </div>
+    `
+    document.getElementById("tasks").innerHTML += content;
+    index++
+   
+}
+   
+    }
+    fillTaskOnThePage()
+
+
+    document.getElementById("add-btn").addEventListener("click",function(){
+let now = new Date()
+let date =now.getDate() +"/"+ (now.getMonth()+1) +"/"+ now.getFullYear()
+    let taskName = prompt("enter a message");
+    let taskObj = {
+        "title":taskName,
+        "date":date,
+        "isDone":false
+    }
+    tasks.push(taskObj)
+    storeTasks()
+    fillTaskOnThePage()
+
+    
+    })
+    function deleteTask(index){
+        let task = tasks[index]
+    let isConfrim = confirm(`ARE YOU SURE FORM DELETE THIS ${task.title}`)
+    if(isConfrim){
+
+        tasks.splice(index,1)
+
+        storeTasks()
+
+
+    fillTaskOnThePage()
+    }
+     
+
+    }
+
+function  editTask(index){
+    let task = tasks[index]
+    let newTaskTitle = prompt("enter a new message",placeholder=`${task.title}`);
+task.title = newTaskTitle
+storeTasks()
+
+fillTaskOnThePage()
+
+}
+
+function toggleTaskComplete(index){
+    let task = tasks[index]
+    if(task.isDone){
+        task.isDone = false;
+    }else{
+        task.isDone = true;
+    }
+    storeTasks()
+
+fillTaskOnThePage()
+
+}
+// ################### STORAGE FUNCTION ####################
+function storeTasks(){
+    let tasksString = JSON.stringify(tasks)
+localStorage.setItem("tasks",tasksString)
+
+}
+
+    
+</script>
+
+
+</html>
+
